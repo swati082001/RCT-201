@@ -10,6 +10,8 @@ type TopicInputProps = {
   type: TopicType;
   onCancel: () => void;
 };
+
+
 const TopicInput = ({ type, onCancel }: TopicInputProps) => {
   const [value, setValue] = useState<string>("");
   const { addTopic } = useContext(TopicsContext);
